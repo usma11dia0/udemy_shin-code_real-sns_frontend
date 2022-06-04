@@ -27,6 +27,9 @@
 .sidebarListItem:hover{
   box-shadow: none;
   transform: translateY(5px);
+  border-bottom:solid 3px;
+  border-radius: 0px;
+  border-color:rgb(156, 156, 242);
 }
 
 .sidebarIcon{

@@ -1,8 +1,8 @@
-import React from "react";
+import React, {memo} from "react";
 import { Analytics, Face, Gif, Image } from "@mui/icons-material";
 import "./Share.css";
 
-export const Share = () => {
+export const Share = memo(() => {
   return (
     <div className="share">
       <div className="shareWrapper">
@@ -19,19 +19,19 @@ export const Share = () => {
         <div className="shareButtons">
           <div className="shareOptions">
             <div className="shareOption">
-              <Image className="shareIcon" htmlColor="blue"/>
+              <Image className="shareIcon" htmlColor="blue" />
               <span className="shareOptionText">写真</span>
             </div>
             <div className="shareOption">
-              <Gif className="shareIcon" htmlColor="hotpink"/>
+              <Gif className="shareIcon" htmlColor="hotpink" />
               <span className="shareOptionText">GIF</span>
             </div>
             <div className="shareOption">
-              <Face className="shareIcon" htmlColor="green"/>
+              <Face className="shareIcon" htmlColor="green" />
               <span className="shareOptionText">気持ち</span>
             </div>
             <div className="shareOption">
-              <Analytics className="shareIcon" htmlColor="red"/>
+              <Analytics className="shareIcon" htmlColor="red" />
               <span className="shareOptionText">投票</span>
             </div>
           </div>
@@ -40,4 +40,4 @@ export const Share = () => {
       </div>
     </div>
   );
-};
+});
